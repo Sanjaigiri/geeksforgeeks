@@ -6,7 +6,7 @@ this function*/
 class Solution {
     int floorSqrt(int n) {
         // Your code here
-        Math.sqrt(n);
+       // Math.sqrt(n);
         return (int)Math.sqrt(n);
     }
 }
