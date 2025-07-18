@@ -3,17 +3,17 @@
 class Solution {
     static int toyCount(int N, int K, int arr[]) {
         // code here
-        Arrays.sort(arr); // Sort the costs
-        int count = 0, sum = 0;
-
-        for (int i = 0; i < N; i++) {
-            if (sum + arr[i] <= K) {
-                sum += arr[i];
-                count++;
-            } else {
-                break;
-            }
-        }
-        return count;
+    int count =0;
+    Arrays.sort(arr);
+    for(int i=0;i<arr.length;i++){
+         if(K>=arr[i]){
+             K-= arr[i];
+             count++;
+         }
+        
+    }
+    return count;
+   
+    
     }
 }
